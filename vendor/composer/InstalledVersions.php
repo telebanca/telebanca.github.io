@@ -30,7 +30,7 @@ class InstalledVersions
     'aliases' => 
     array (
     ),
-    'reference' => '4c7c11d0f28521dd48b835d32887a491db691e81',
+    'reference' => 'ec132c59156078305321a4c5cdb4ef43f24c8319',
     'name' => 'ernesto/telebanca-vainilla',
   ),
   'versions' => 
@@ -42,23 +42,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => '4c7c11d0f28521dd48b835d32887a491db691e81',
-    ),
-    'twbs/bootstrap' => 
-    array (
-      'pretty_version' => 'v5.1.3',
-      'version' => '5.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '1a6fdfae6be09b09eaced8f0e442ca6f7680a61e',
-    ),
-    'twitter/bootstrap' => 
-    array (
-      'replaced' => 
-      array (
-        0 => 'v5.1.3',
-      ),
+      'reference' => 'ec132c59156078305321a4c5cdb4ef43f24c8319',
     ),
   ),
 );

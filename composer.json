@@ -2,7 +2,6 @@
     "name": "ernesto/telebanca-vainilla",
     "type": "project",
     "require": {
-        "twbs/bootstrap": "^5.1"
     },
     "license": "MIT",
     "authors": [
