@@ -9,7 +9,7 @@ const banksName = {
       //autenticarse BPA
       title:"AUTENTICARSE BPA",
       description:"Autenticarse en Banco Popular de Ahorro",
-      link:"tel:*444*40*01#",
+      link:"tel:*444*40*01%23",
       icon:"",
       banks:[banksName.BPA]
     },
@@ -17,7 +17,7 @@ const banksName = {
       //autenticarse BANDEC
       title:"AUTENTICARSE BANDEC",
       description:"Autenticarse en Banco de Crédito y Comercio",
-      link:"tel:*444*40*02#",
+      link:"tel:*444*40*02%23",
       icon:"",
       banks:[banksName.BANDEC]
     },
