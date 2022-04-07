@@ -21,5 +21,13 @@ a{
     background: linear-gradient(#8c0918, #8c0918b3);
 }
 .bpa-background{
-    background: linear-gradient(#327B74, #327B74b3);
+    background: linear-gradient(#327B74, #549D96);
+}
+
+div.operation:first-child{
+    padding-top: 26px;
+}
+
+div.operation:last-child{
+    padding-bottom: 26px;
 }
