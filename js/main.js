@@ -1,5 +1,3 @@
-
-
 // const banksName = {
 //     BANDEC:'BANDEC',
 //     BPA:'BPA',
@@ -7,29 +5,32 @@
 //   }
 const version = '1.0.0';
 const storageKey = `telebanca${version}`;
+let selectedBankToRegister = 0;
+
 let adsRemain=10;
 let cards = [];
+
+
 if(localStorage.getItem(storageKey) === null){
-  console.log('no hay datos');
-  localStorage.setItem(storageKey, JSON.stringify(
-    {
-      'adsRemain':adsRemain,
-      "cards":cards
-    }
-    ));
-}else{
-  console.log('else');
-  let item = JSON.parse(localStorage.getItem(storageKey));
-  adsRemain = item.adsRemain-1;
-  saveState();
-  cards = item.cards;
+  
+    localStorage.setItem(storageKey, JSON.stringify(
+      {
+        'adsRemain':adsRemain,
+        "cards":cards
+      }
+      ));
+  }else{
+    
+    let item = JSON.parse(localStorage.getItem(storageKey));
+    adsRemain = item.adsRemain-1;
+    saveState();
+    cards = item.cards;
 
 }
-console.log("ads",adsRemain);
 if(adsRemain<=0){
-  alert('You have '+adsRemain+' ads left');
-  adsRemain=10;
-  saveState();
+    alert('You have '+adsRemain+' ads left');
+    adsRemain=10;
+    saveState();
 }
 
 function saveState(){
@@ -43,6 +44,8 @@ function saveState(){
 
 let bandecContainer = document.getElementById("BANDEC");
 let bpaContainer = document.getElementById("BPA");
+console.log(getLinkDonateTel());
+document.getElementById("donate-tel").href=getLinkDonateTel();
 
 let  bandecOperations = operation.filter(value => value.banks.includes(banksName.BANDEC));
 let  bpaOperations = operation.filter(value => value.banks.includes(banksName.BPA));
@@ -54,10 +57,10 @@ document.getElementById("tarjeta").addEventListener("keyup", () => {
   
   let cardRegExp=/[\d]{16}/;
   let cardNumberLink = document.getElementById("tarjeta");
-  console.log(cardNumberLink.value);
   if(cardRegExp.test(cardNumberLink.value) && cardNumberLink.value.length === 16){
     document.getElementById("register-card-btn").hidden = false;
-    document.getElementById("register-card-btn").href = `tel:/*444*40*03*${cardNumberLink.value}#`;
+    let bankCode =document.querySelector(".bank-select.active").getAttribute("data-code");
+    document.getElementById("register-card-btn").href = `tel:*444*49*${bankCode}*${cardNumberLink.value}%23`;
   }
   else{
     document.getElementById("register-card-btn").hidden = true;
@@ -81,4 +84,16 @@ function populateDiv(operations, container){
   });
 }
 
-
+document.querySelectorAll(".bank-select").forEach(bank => {
+  bank.addEventListener("click", () => {
+    document.querySelectorAll(".bank-select").forEach(bank => {
+      bank.classList.remove("active");
+    });
+    bank.classList.add("active");
+    let cardNumberLink = document.getElementById("tarjeta");
+    if(cardNumberLink.value.length === 16){
+      document.getElementById("register-card-btn").hidden = false;
+      document.getElementById("register-card-btn").href = `tel:*444*49*${bank.getAttribute("data-code")}*${cardNumberLink.value}%23`;
+    }
+  });
+});

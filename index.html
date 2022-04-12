@@ -42,8 +42,8 @@
     <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
       <div class="form">
         <div class="btn-group">
-          <a href="#!" class="btn btn-primary active">BANDEC</a>
-          <a href="#!" class="btn btn-primary">BPA</a>
+          <a href="#!" class="btn btn-primary bank-select active" data-code="02">BANDEC</a>
+          <a href="#!" class="btn btn-primary bank-select" data-code="01">BPA</a>
           <!-- <a href="#!" class="btn btn-primary">Link</a> -->
         </div>
         <label for="tarjeta">Tarjeta a registrar</label>
@@ -58,6 +58,14 @@
         <div class="operationcard">
           <a href="#">
             <div class="title">Apoya el desarrollo</div>
+            <div class="description">El desarrollador no se hace responsable de las acciones que pueda realizar con la misma. Uséla bajo su propio riesgo.</div>
+            </a>
+        </div>
+      </div>
+      <div class="operation">
+        <div class="operationcard">
+          <a href="#">
+            <div class="title">Apoya el desarrollo</div>
             <div class="description">Esta app el desarrollador la proporciona de manera gratuita bajo licencia MIT. Usted puede apoyar el desarrollo y las actualizaciones de la misma mediante donaciones.</div>
             </a>
         </div>
@@ -67,6 +75,14 @@
           <a href="mailto:telebanca.cu@hotmail.com">
             <div class="title">Soporte</div>
             <div class="description">Enviar correo a soporte</div>
+            </a>
+        </div>
+      </div>
+      <div class="operation">
+        <div class="operationcard">
+          <a href="#" id="donate-tel">
+            <div class="title">Donar saldo telefónico</div>
+            <div class="description">Done la que estime conveniente al desarrollador de esta app</div>
             </a>
         </div>
       </div>
@@ -93,8 +109,8 @@
             });
         });        
     </script>
-    <script src="js/info.js"></script>
+    <script src="js/info.js"></script>    
+    <script src="js/donatecu.js"></script>
     <script src="js/main.js"></script>
-    
 </body>
 </html>
