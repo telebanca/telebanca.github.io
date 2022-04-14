@@ -2,6 +2,7 @@ var cacheName = 'telebanca.github.io';
 var filesToCache = [
   '/',
   '/index.html',
+  '/img/net-banking.png',
   '/css/main.css',
   '/css/bootstrap.min.css',
   '/js/main.js',
