@@ -12,7 +12,7 @@ let cards = [];
 
 window.onload = () => {
   'use strict';
-
+  console.log("entra");
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
              .register('./sw.js');
