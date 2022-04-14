@@ -14,6 +14,7 @@ window.onload = () => {
   'use strict';
   console.log("entra");
   if ('serviceWorker' in navigator) {
+    console.log("entra sw");
     navigator.serviceWorker
              .register('/sw.js');
   }
