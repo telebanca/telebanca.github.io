@@ -10,6 +10,15 @@ let selectedBankToRegister = 0;
 let adsRemain=10;
 let cards = [];
 
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
+
 
 if(localStorage.getItem(storageKey) === null){
   
