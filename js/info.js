@@ -79,6 +79,14 @@ const banksName = {
       banks:[banksName.BANDEC,banksName.BPA]
     },
     {
+      //Recargar nauta
+      title:"Recargar nauta",
+      description:"Recarga de cuenta nauta nacional o internacional",
+      link:"tel:*444*59%23",
+      icon:"",
+      banks:[banksName.BANDEC,banksName.BPA]
+    },
+    {
       //Giro Postal
       title:"Giro postal",
       description:"Envío o consulta de giro postal",
