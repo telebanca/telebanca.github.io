@@ -15,7 +15,7 @@ window.onload = () => {
   console.log("entra");
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./sw.js');
+             .register('/sw.js');
   }
 }
 
