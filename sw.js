@@ -9,7 +9,7 @@ const filesToCache = [
   '/js/info.js',
   '/js/jquery-3.3.1.slim.min.js',
   '/js/bootstrap.min.js',
-  '/js/sw.js',
+  '/sw.js',
   '/js/donatecu.js'
 ];
 
