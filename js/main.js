@@ -37,7 +37,7 @@ if(localStorage.getItem(storageKey) === null){
 
 }
 if(adsRemain<=0){
-    alert('You have '+adsRemain+' ads left');
+    // alert('You have '+adsRemain+' ads left');
     adsRemain=10;
     saveState();
 }
