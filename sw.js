@@ -1,5 +1,5 @@
 var cacheName = 'telebanca.github.io';
-var filesToCache = [
+const filesToCache = [
   '/',
   '/index.html',
   '/img/net-banking.png',
