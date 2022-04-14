@@ -6,7 +6,7 @@
 const version = '1.0.0';
 const storageKey = `telebanca${version}`;
 let selectedBankToRegister = 0;
-
+console.log(`version:${version}`);
 let adsRemain=10;
 let cards = [];
 
