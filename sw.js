@@ -13,39 +13,27 @@ const filesToCache = [
   '/js/donatecu.js'
 ];
 
-/* Start the service worker and cache all of the app's content */
 self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
-  e.waitUntil((async () => {
-    const cache = await caches.open(cacheName);
-    console.log('[Service Worker] Caching all: app shell and content');
-    await cache.addAll(filesToCache);
-})());
+  console.log('[Service Worker] Install');
+  e.waitUntil(
+    caches.open(cacheName).then((cache) => {
+          console.log('[Servicio Worker] Almacena todo en caché: contenido e intérprete de la aplicación');
+      return cache.addAll(filesToCache);
+    })
+  );
 });
-//     caches.open(cacheName).then(function(cache) {
-//       return cache.addAll(filesToCache);
-//     })
-//   );
-// });
-
-// /* Serve cached content when offline */
-// self.addEventListener('fetch', function(e) {
-//   e.respondWith(
-//     caches.match(e.request).then(function(response) {
-//       return response || fetch(e.request);
-//     })
-//   );
-// });
 
 self.addEventListener('fetch', (e) => {
-    e.respondWith((async () => {
-      const r = await caches.match(e.request);
-      console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
-      if (r) return r;
-      const response = await fetch(e.request);
-      const cache = await caches.open(cacheName);
-      console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
-      cache.put(e.request, response.clone());
-      return response;
-    })());
-  });
+  e.respondWith(
+    caches.match(e.request).then((r) => {
+          console.log('[Servicio Worker] Obteniendo recurso: '+e.request.url);
+      return r || fetch(e.request).then((response) => {
+                return caches.open(cacheName).then((cache) => {
+          console.log('[Servicio Worker] Almacena el nuevo recurso: '+e.request.url);
+          cache.put(e.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
+});
