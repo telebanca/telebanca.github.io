@@ -12,7 +12,7 @@
     "lang": "es-US",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "green",
-    "theme_color": "green"
+    "background_color": "#f8f9fa",
+    "theme_color": "#f8f9fa"
 
   }
