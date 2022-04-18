@@ -43,3 +43,7 @@ div.operation:first-child{
 div.operation:last-child{
     padding-bottom: 26px;
 }
+
+.form div{
+    margin: 5px;
+}
