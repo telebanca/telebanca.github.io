@@ -47,26 +47,26 @@ const banksName = {
       banks:[banksName.BANDEC,banksName.BPA]
     },
     {
-      //Telefono
+      //Telefono 
       title:"Teléfono",
       description:"Pago de factura telefónica",
       link:"tel:*444*42%23",
       icon:"",
       banks:[banksName.BANDEC,banksName.BPA]
     },
-    {
-      //Onat
-      title:"ONAT",
-      description:"Pago de la ONAT",
-      link:"tel:*444*43%23",
-      icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
-    },
+    // {
+    //   //Onat
+    //   title:"ONAT",
+    //   description:"Pago de la ONAT",
+    //   link:"tel:*444*43%23",
+    //   icon:"",
+    //   banks:[banksName.BANDEC,banksName.BPA]
+    // },
     {
       //AGUA
       title:"Agua",
       description:"Pago a Aguas de La Habana",
-      link:"tel:*444*40*51%23",
+      link:"tel:*444*51%23",
       icon:"",
       banks:[banksName.BANDEC,banksName.BPA]
     },
@@ -191,6 +191,14 @@ const banksName = {
       icon:"",
       banks:[banksName.BANDEC,banksName.BPA]
     },
+    // {
+    //   //Cambiar Límite tarjeta
+    //   title:"Cambiar Límite tarjeta",
+    //   description:"Cambiar límite de operaciones y de extracción de saldo posible en un día",
+    //   link:"tel:*444*61%23",
+    //   icon:"",
+    //   banks:[banksName.BANDEC,banksName.BPA]
+    // },
     {
       //Consultar todas las cuentas
       title:"Consultar todas las cuentas",
@@ -229,16 +237,16 @@ const banksName = {
       description:"Cambio Ĺimite de saldo a extraer en un día",
       link:"tel:*444*61%23",
       icon:"",
-      banks:[banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA]
     },
-    {//TODO:
-      //registrar tarjeta
-      title:"no funciona Registrar Tarjeta",
-      description:"No Funciona Registrar Tarjeta BPA",
-      link:"tel:*444*49*01*1234567890123456%23",
-      icon:"",
-      banks:[banksName.BPA]
-    },
+    // {//TODO:
+    //   //registrar tarjeta
+    //   title:"no funciona Registrar Tarjeta",
+    //   description:"No Funciona Registrar Tarjeta BPA",
+    //   link:"tel:*444*49*01*1234567890123456%23",
+    //   icon:"",
+    //   banks:[banksName.BPA]
+    // },
     {
       //Eliminar registro
       title:"Eliminar Registro",
@@ -301,7 +309,7 @@ const banksName = {
       description:"Cambiar clave de acceso",
       link:"tel:*444*69%23",
       icon:"",
-      banks:[banksName.BPA]
+      banks:[banksName.BPA, banksName.BANDEC]
     },
     {
       //Asosciar cuentas
@@ -309,7 +317,23 @@ const banksName = {
       description:"Vincular otra cuenta bancaria",
       link:"tel:*444*60%23",
       icon:"",
-      banks:[banksName.BPA]
+      banks:[banksName.BPA, banksName.BANDEC]
+    },
+    {
+      //Apertura cuenta usd
+      title:"Apertura cuenta en USD",
+      description:"Apertura de cuenta USD con respaldo MLC",
+      link:"tel:*444*76%23",
+      icon:"",
+      banks:[banksName.BANDEC]
+    },
+    {
+      //Cambio de PIN Multibanca
+      title:"Cambio de PIN Multibanca",
+      description:"Cambio del PIN de la tarjeta Multibanca",
+      link:"tel:*444*57%23",
+      icon:"",
+      banks:[banksName.BPA, banksName.BANDEC]
     },
     {
       //Ayuda
@@ -317,7 +341,7 @@ const banksName = {
       description:"Lista de operaciones permitidas",
       link:"tel:*444*71%23",
       icon:"",
-      banks:[banksName.BPA]
+      banks:[banksName.BPA,banksName.BANDEC]
     }
 
   ];
