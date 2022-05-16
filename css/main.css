@@ -36,6 +36,10 @@ a{
     background: linear-gradient(#327B74, #549D96);
 }
 
+.bm-background{
+    background: linear-gradient(#9cc600, #7aa400);
+}
+
 div.operation:first-child{
     padding-top: 26px;
 }

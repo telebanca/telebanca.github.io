@@ -54,14 +54,17 @@ function saveState(){
 
 let bandecContainer = document.getElementById("BANDEC");
 let bpaContainer = document.getElementById("BPA");
+let bmContainer = document.getElementById("BM");
 console.log(getLinkDonateTel());
 document.getElementById("donate-tel").href=getLinkDonateTel();
 
 let  bandecOperations = operation.filter(value => value.banks.includes(banksName.BANDEC));
 let  bpaOperations = operation.filter(value => value.banks.includes(banksName.BPA));
+let  bmOperations = operation.filter(value => value.banks.includes(banksName.BM));
 
 populateDiv(bandecOperations, bandecContainer);
 populateDiv(bpaOperations, bpaContainer);
+populateDiv(bmOperations,bmContainer);
 
 document.getElementById("tarjeta").addEventListener("keyup", () => {
   
@@ -98,8 +101,11 @@ document.querySelectorAll(".bank-select").forEach(bank => {
   bank.addEventListener("click", () => {
     document.querySelectorAll(".bank-select").forEach(bank => {
       bank.classList.remove("active");
+      bank.classList.remove("btn-primary");
     });
     bank.classList.add("active");
+    bank.classList.add("btn-primary");
+    
     let cardNumberLink = document.getElementById("tarjeta");
     if(cardNumberLink.value.length === 16){
       document.getElementById("register-card-btn").hidden = false;

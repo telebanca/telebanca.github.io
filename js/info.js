@@ -22,12 +22,20 @@ const banksName = {
       banks:[banksName.BANDEC]
     },
     {
+      //autenticarse BM
+      title:"AUTENTICARSE BM",
+      description:"Autenticarse en Banco Metropolitano",
+      link:"tel:*444*40*03%23",
+      icon:"",
+      banks:[banksName.BM]
+    },
+    {
       //CERRAR SESION BPA
       title:"Cerrar sesión",
       description:"Cierra la sesión actual",
       link:"tel:*444*70%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
 
     {
@@ -36,7 +44,7 @@ const banksName = {
       description:"Transferir saldo a otra cuenta o tarjeta",
       link:"tel:*444*45%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Electricidad
@@ -44,7 +52,7 @@ const banksName = {
       description:"Pago de la electriciad",
       link:"tel:*444*41%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Telefono 
@@ -52,8 +60,8 @@ const banksName = {
       description:"Pago de factura telefónica",
       link:"tel:*444*42%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
-    },
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
+    },//TODO: ONAT 
     // {
     //   //Onat
     //   title:"ONAT",
@@ -68,7 +76,7 @@ const banksName = {
       description:"Pago a Aguas de La Habana",
       link:"tel:*444*51%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Recargar movil
@@ -76,7 +84,7 @@ const banksName = {
       description:"Recarga de saldo fijo línea Cubacel",
       link:"tel:*444*54%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Recargar nauta
@@ -84,7 +92,7 @@ const banksName = {
       description:"Recarga de cuenta nauta nacional o internacional",
       link:"tel:*444*59%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Giro Postal
@@ -92,7 +100,7 @@ const banksName = {
       description:"Envío o consulta de giro postal",
       link:"tel:*444*64%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Gas
@@ -100,7 +108,7 @@ const banksName = {
       description:"Pago de factura de gas",
       link:"tel:*444*67%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Cuenta Joven Club
@@ -108,7 +116,7 @@ const banksName = {
       description:"Recarga Cuenta Joven Club",
       link:"tel:*444*93%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Cuota nauta hogar
@@ -116,7 +124,7 @@ const banksName = {
       description:"Paga cuota Nauta Hogar",
       link:"tel:*444*84%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Deuda nauta hogar
@@ -124,7 +132,7 @@ const banksName = {
       description:"Paga deuda Nauta Hogar",
       link:"tel:*444*86%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Recarga Tarjeta Propia
@@ -132,7 +140,7 @@ const banksName = {
       description:"Recarga Tarjeta Propia",
       link:"tel:*444*77%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Deposito a plazo fijo
@@ -156,7 +164,7 @@ const banksName = {
       description:"Pagar Multa",
       link:"tel:*444*44%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
 
     {
@@ -165,7 +173,7 @@ const banksName = {
       description:"Consultar saldo de la tarjeta",
       link:"tel:*444*46%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Consultar servios
@@ -173,7 +181,7 @@ const banksName = {
       description:"Consultar factura del servicio",
       link:"tel:*444*47%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Últimas operaciones
@@ -181,7 +189,7 @@ const banksName = {
       description:"Consultar últimas 10 operaciones",
       link:"tel:*444*48%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Consultar Límite tarjeta
@@ -189,7 +197,7 @@ const banksName = {
       description:"Consultar operaciones y extracción de saldo posible en un día",
       link:"tel:*444*62%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     // {
     //   //Cambiar Límite tarjeta
@@ -205,7 +213,7 @@ const banksName = {
       description:"Consultar todas las cuentas a la vez",
       link:"tel:*444*58%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Consultar giro postal
@@ -213,7 +221,15 @@ const banksName = {
       description:"Consultar todas las cuentas a la vez",
       link:"tel:*444*65%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
+    },
+    {
+      //Localizar Transferencia
+      title:"Localizar Transferencia",
+      description:"Localizar Transferencia",
+      link:"tel:*444*73%23",
+      icon:"",
+      banks:[banksName.BM]
     },
     {
       //Consultar Créditos
@@ -229,7 +245,7 @@ const banksName = {
       description:"Tipo de Cambio",
       link:"tel:*444*85%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     {
       //Cambio Ĺimite Tarjeta
@@ -237,7 +253,7 @@ const banksName = {
       description:"Cambio Ĺimite de saldo a extraer en un día",
       link:"tel:*444*61%23",
       icon:"",
-      banks:[banksName.BANDEC,banksName.BPA]
+      banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
     },
     // {//TODO:
     //   //registrar tarjeta
@@ -264,12 +280,20 @@ const banksName = {
       banks:[banksName.BANDEC]
     },
     {
+      //Eliminar registro
+      title:"Eliminar Registro",
+      description:"Eliminar Registro",
+      link:"tel:*444*68*03%23",
+      icon:"",
+      banks:[banksName.BM]
+    },
+    {
       //Servicios Contratados
       title:"Servicios Contratados",
       description:"Lista los Servicios Contratados",
       link:"tel:*444*52%23",
       icon:"",
-      banks:[banksName.BPA, banksName.BANDEC]
+      banks:[banksName.BPA, banksName.BANDEC,banksName.BM]
     },
     {
       //Amortizar Creditos
@@ -285,7 +309,7 @@ const banksName = {
       description:"Reimpresión de Tarjeta Magnética",
       link:"tel:*444*74%23",
       icon:"",
-      banks:[banksName.BPA, banksName.BANDEC]
+      banks:[banksName.BPA, banksName.BANDEC,banksName.BM]
     },
     {
       //Información de tarjeta de red
@@ -309,15 +333,23 @@ const banksName = {
       description:"Cambiar clave de acceso",
       link:"tel:*444*69%23",
       icon:"",
-      banks:[banksName.BPA, banksName.BANDEC]
+      banks:[banksName.BPA, banksName.BANDEC,banksName.BM]
     },
     {
       //Asosciar cuentas
-      title:"Asosciar cuentas",
+      title:"Asosciar cuentas Cambio Tarjeta a Operar",
       description:"Vincular otra cuenta bancaria",
       link:"tel:*444*60%23",
       icon:"",
-      banks:[banksName.BPA, banksName.BANDEC]
+      banks:[banksName.BPA, banksName.BANDEC,banksName.BM]
+    },
+    {
+      //Actualizar Cuenta
+      title:"Actualizar Cuenta",
+      description:"Actualizar cuentas asociadas a su tarjeta telebanca",
+      link:"tel:*444*53%23",
+      icon:"",
+      banks:[banksName.BM]
     },
     {
       //Apertura cuenta usd
@@ -325,7 +357,7 @@ const banksName = {
       description:"Apertura de cuenta USD con respaldo MLC",
       link:"tel:*444*76%23",
       icon:"",
-      banks:[banksName.BANDEC]
+      banks:[banksName.BANDEC,banksName.BM]
     },
     {
       //Cambio de PIN Multibanca
@@ -341,7 +373,7 @@ const banksName = {
       description:"Lista de operaciones permitidas",
       link:"tel:*444*71%23",
       icon:"",
-      banks:[banksName.BPA,banksName.BANDEC]
+      banks:[banksName.BPA,banksName.BANDEC,banksName.BM]
     }
 
   ];
