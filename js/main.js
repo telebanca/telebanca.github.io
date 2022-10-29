@@ -67,7 +67,7 @@ populateDiv(bpaOperations, bpaContainer);
 populateDiv(bmOperations,bmContainer);
 
 document.getElementById("tarjeta").addEventListener("keyup", () => {
-  
+  console.log("keyup");
   let cardRegExp=/[\d]{16}/;
   let cardNumberLink = document.getElementById("tarjeta");
   if(cardRegExp.test(cardNumberLink.value) && cardNumberLink.value.length === 16){
