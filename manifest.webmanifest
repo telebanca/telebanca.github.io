@@ -6,7 +6,7 @@
     "icons": [
       {
         "src": "img/net-banking.png",
-        "sizes": "32x32",
+        "sizes": "512x512",
         "type": "image/png"
       }],
     "lang": "es-US",
