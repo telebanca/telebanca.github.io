@@ -4,11 +4,9 @@
     "short_name": "Telebanca",
     "description": "Aplicación web progresiva para trabajo con telebanca cubana.",
     "icons": [
-      {
-        "src": "img/net-banking.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }],
+      {"purpose":"maskable","sizes":"512x512","src":"img/icon512_maskable.png","type":"image/png"},
+      {"purpose":"any","sizes":"512x512","src":"img/icon512_rounded.png","type":"image/png"}
+    ],
     "lang": "es-US",
     "start_url": "/index.html",
     "display": "standalone",

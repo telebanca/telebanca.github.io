@@ -3,6 +3,8 @@ const filesToCache = [
   '/',
   '/index.html',
   '/img/net-banking.png',
+  '/img/icon512_maskable.png',
+  '/img/icon512_rounded.png',
   '/css/main.css',
   '/css/bootstrap.min.css',
   '/js/main.js',
