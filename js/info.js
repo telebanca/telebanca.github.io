@@ -61,15 +61,16 @@ const banksName = {
       link:"tel:*444*42%23",
       icon:"",
       banks:[banksName.BANDEC,banksName.BPA,banksName.BM]
-    },//TODO: ONAT 
-    // {
-    //   //Onat
-    //   title:"ONAT",
-    //   description:"Pago de la ONAT",
-    //   link:"tel:*444*43%23",
-    //   icon:"",
-    //   banks:[banksName.BANDEC,banksName.BPA]
-    // },
+    },
+    //TODO: ONAT 
+    {
+      //Onat
+      title:"ONAT",
+      description:"Pago de la ONAT",
+      link:"tel:*444*43%23",
+      icon:"",
+      banks:[banksName.BANDEC,banksName.BPA]
+    },
     {
       //AGUA
       title:"Agua",
